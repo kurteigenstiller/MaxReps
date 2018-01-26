@@ -20,23 +20,23 @@
 
     <EditText
         android:id="@+id/gewicht_zahl"
-        android:layout_width="50dp"
-        android:layout_height="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
         android:inputType="numberDecimal"
-        android:labelFor="@+id/gewicht_text"
         android:text="@string/gewicht_zahl"
-        android:textAlignment="center"
+        android:textAlignment="@string/gewicht_zahl"
         android:textColor="@color/colorAccent"
-        android:textSize="24sp"
+        android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/mitte_horizontal"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/gewicht_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/mitte_horizontal" />
 
     <TextView
         android:id="@+id/wh_text"
-        android:layout_width="143dp"
+        android:layout_width="0dp"
         android:layout_height="25dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
@@ -47,20 +47,20 @@
 
     <EditText
         android:id="@+id/wh_zahl"
-        android:layout_width="51dp"
-        android:layout_height="26dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:enabled="true"
-        android:inputType="numberDecimal"
+        android:inputType="number"
         android:labelFor="@+id/wh_text"
         android:text="@string/wh_zahl"
         android:textAlignment="@string/wh_zahl"
         android:textColor="@color/colorAccent"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/mitte_horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar_gewicht" />
+        app:layout_constraintBottom_toBottomOf="@+id/wh_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/mitte_horizontal" />
 
     <android.support.constraint.Guideline
         android:id="@+id/mitte_horizontal"
@@ -75,16 +75,13 @@
     <SeekBar
         android:id="@+id/seekBar_gewicht"
         style="@style/Widget.AppCompat.SeekBar.Discrete"
-        android:layout_width="336dp"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
-        android:max="100"
-        android:progress="10"
         android:thumb="@android:drawable/ic_lock_lock"
-        app:layout_constraintEnd_toStartOf="@+id/mitte_horizontal"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gewicht_text" />
 
