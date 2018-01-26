@@ -1,9 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MaxReps</string>
-    <string name="kg_geschafft">Gewicht geschafft (kg)</string>
     <string name="gewicht_zahl">0</string>
-    <string name="wh_text">Wiederholungen</string>
     <string name="wh_zahl">0</string>
+    <string name="kg_geschafft">Gewicht geschafft (kg)</string>
+    <string name="wh_text">Wiederholungen</string>
     <string name="button_send">Send</string>
-    <string name="name">Name</string>
 </resources>
